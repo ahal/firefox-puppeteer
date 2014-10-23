@@ -8,6 +8,7 @@ class Tabs(object):
 
     @property
     def active_tab(self):
+        # TODO this doesn't work; see bug 1088223
         for tab in self.tabs:
             if tab.get_attribute('selected'):
                 return tab
