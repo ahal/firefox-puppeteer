@@ -14,7 +14,7 @@ class Toolbar(object):
 
     @property
     def location(self):
-        # TODO test with e10s enabled
+        # TODO probably doesn't work with e10s enabled
         return self.client.execute_script("""
             return gBrowser.selectedBrowser.contentWindow.location.href;
         """)
